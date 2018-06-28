@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import luckyclient.caserun.exwebdriver.ex.WebCaseExecution;
 import luckyclient.dblog.DbLink;
@@ -67,6 +68,9 @@ public class CaseLocalDebug{
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub	
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Administrator\\Desktop\\classes\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		oneCasedebug(driver, "testdemo-2");
 
 	}
 
